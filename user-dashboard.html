@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SkyCast</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- NAVBAR -->
+
+    <header class="dashboard-nav">
+
+        <div class="logo">
+            🌤️ SkyCast
+        </div>
+
+        <div class="user-area">
+            <span id="welcomeUser">Welcome</span>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN DASHBOARD -->
+
+    <main class="dashboard-container">
+
+        <section class="search-section">
+
+            <div>
+                <p class="small-title">WEATHER DASHBOARD</p>
+
+                <h1>Check the weather anywhere.</h1>
+
+                <p>
+                    Search for a city to get the latest weather information.
+                </p>
+            </div>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                >
+
+               <button type="button" onclick="searchWeather()"></button>
+                    🔍 Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CURRENT WEATHER -->
+
+        <section class="current-weather">
+
+            <div class="weather-location">
+
+                <p>📍 <span id="cityName">Hyderabad, India</span></p>
+
+                <h2 id="temperature">32°C</h2>
+
+                <p id="condition">Mostly Sunny</p>
+                <button class="favorite-btn" onclick="addFavorite()">
+    ⭐ Add to Favorites
+</button>
+
+            </div>
+
+
+            <div class="big-weather-icon" id="weatherIcon">
+                ☀️
+            </div>
+
+        </section>
+
+
+        <!-- WEATHER DETAILS -->
+
+        <section class="weather-details">
+
+            <div class="detail-card">
+
+                <span>💧</span>
+
+                <div>
+                    <small>Humidity</small>
+                    <strong id="humidity">65%</strong>
+                </div>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span>💨</span>
+
+                <div>
+                    <small>Wind Speed</small>
+                    <strong id="wind">12 km/h</strong>
+                </div>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span>🌡️</span>
+
+                <div>
+                    <small>Pressure</small>
+                    <strong id="pressure">1012 hPa</strong>
+                </div>
+
+            </div>
+
+
+            <div class="detail-card">
+
+                <span>👁️</span>
+
+                <div>
+                    <small>Visibility</small>
+                    <strong id="visibility">10 km</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORECAST -->
+
+        <section class="forecast-section">
+
+            <div class="section-heading">
+
+                <h2>5-Day Forecast</h2>
+
+                <span>Upcoming weather</span>
+
+            </div>
+
+
+            <div class="forecast-grid">
+
+                <div class="forecast-card">
+                    <p>Wed</p>
+                    <span>☀️</span>
+                    <strong>33°C</strong>
+                </div>
+
+                <div class="forecast-card">
+                    <p>Thu</p>
+                    <span>🌤️</span>
+                    <strong>31°C</strong>
+                </div>
+
+                <div class="forecast-card">
+                    <p>Fri</p>
+                    <span>🌧️</span>
+                    <strong>28°C</strong>
+                </div>
+
+                <div class="forecast-card">
+                    <p>Sat</p>
+                    <span>☀️</span>
+                    <strong>32°C</strong>
+                </div>
+
+                <div class="forecast-card">
+                    <p>Sun</p>
+                    <span>☁️</span>
+                    <strong>29°C</strong>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="favorites-section">
+
+    <div class="section-heading">
+
+        <h2>⭐ Favorite Cities</h2>
+
+        <span>Your saved locations</span>
+
+    </div>
+
+    <div id="favoritesList" class="favorites-list">
+    </div>
+
+</section>
+
+
+        <!-- WEATHER TIP -->
+
+       <section class="weather-tip">
+
+    <div class="tip-icon">
+        💡
+    </div>
+
+    <div>
+        <h3>Weather Tip</h3>
+
+        <p id="weatherTip">
+            Stay hydrated and avoid prolonged exposure
+            to direct sunlight during hot weather.
+        </p>
+    </div>
+
+</section>
+<script src="js/user.js"></script>
+
+</main>
+
+<script src="js/user.js"></script>
+
+</body>
+</html>

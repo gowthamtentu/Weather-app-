@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | SkyCast</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <!-- NAVBAR -->
+
+    <header class="dashboard-nav">
+
+        <div class="logo">
+            🛠️ SkyCast Admin
+        </div>
+
+        <div class="user-area">
+
+            <span>Administrator</span>
+
+            <button onclick="adminLogout()">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ADMIN DASHBOARD -->
+
+    <main class="dashboard-container">
+
+        <div class="admin-heading">
+
+            <p class="small-title">
+                ADMIN PANEL
+            </p>
+
+            <h1>
+                Weather App Management
+            </h1>
+
+            <p>
+                Manage users, weather tips and application information.
+            </p>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <section class="admin-stats">
+
+            <div class="stat-card">
+
+                <span>👥</span>
+
+                <div>
+
+                    <small>
+                        Registered Users
+                    </small>
+
+                    <strong id="userCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>🌦️</span>
+
+                <div>
+
+                    <small>
+                        Weather Searches
+                    </small>
+
+                    <strong>
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>⭐</span>
+
+                <div>
+
+                    <small>
+                        Favorite Cities
+                    </small>
+
+                    <strong>
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>⚠️</span>
+
+                <div>
+
+                    <small>
+                        Weather Alerts
+                    </small>
+
+                    <strong>
+                        2
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REGISTERED USERS -->
+
+        <section class="admin-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Registered Users
+                </h2>
+
+                <span>
+                    User Management
+                </span>
+
+            </div>
+
+
+            <div class="user-table">
+
+                <div class="table-header">
+
+                    <span>Name</span>
+                    <span>Email</span>
+                    <span>Action</span>
+
+                </div>
+
+                <div id="usersList"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WEATHER TIPS -->
+
+        <section class="admin-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Weather Tips
+                </h2>
+
+                <span>
+                    Manage Information
+                </span>
+
+            </div>
+
+
+            <div class="admin-tip-grid">
+
+                <div class="admin-tip">
+
+                    ☀️
+
+                    <div>
+
+                        <h3>
+                            Hot Weather
+                        </h3>
+
+                        <p>
+                            Stay hydrated and avoid prolonged
+                            exposure to direct sunlight.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-tip">
+
+                    🌧️
+
+                    <div>
+
+                        <h3>
+                            Rainy Weather
+                        </h3>
+
+                        <p>
+                            Carry an umbrella and check
+                            rainfall alerts before travelling.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ALERTS -->
+
+        <section class="admin-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Weather Alerts
+                </h2>
+
+                <span>
+                    Important Information
+                </span>
+
+            </div>
+
+
+            <div class="alert-card">
+
+                ⚠️
+
+                <div>
+
+                    <h3>
+                        Stay Weather Aware
+                    </h3>
+
+                    <p>
+                        Always check current weather conditions
+                        before travelling during severe weather.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>
